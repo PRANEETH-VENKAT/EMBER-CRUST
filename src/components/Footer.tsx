@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, MapPin, Clock, Phone } from 'lucide-react';
+import { Flame, MapPin, Clock, Phone, Github, Linkedin, Mail } from 'lucide-react';
 import { Reveal } from './ui/Reveal';
 
 interface FooterProps {
@@ -73,11 +73,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPortfolio }) => {
                 <br />
                 Ramapuram, Chennai, Tamil Nadu – 600089
               </p>
-              <div className="pt-1 font-mono text-xs">
+              <div className="pt-1 font-mono text-xs space-y-1.5">
                 <p className="flex items-center gap-2 text-[#A3A3A3]">
                   <Phone className="h-3.5 w-3.5 text-[#FFD60A]" />
                   <span>+91 (44) 4392-EMBER</span>
                 </p>
+                <a
+                  href="mailto:praneethvenkat.cn@gmail.com"
+                  className="flex items-center gap-2 text-[#A3A3A3] hover:text-[#FFD60A] transition-colors"
+                >
+                  <Mail className="h-3.5 w-3.5 text-[#FFD60A]" />
+                  <span>praneethvenkat.cn@gmail.com</span>
+                </a>
               </div>
             </div>
 
@@ -107,8 +114,38 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPortfolio }) => {
               &copy; {new Date().getFullYear()} EMBER &amp; CRUST Wood-Fired Kitchen. All
               rights reserved.
             </p>
-            <div className="flex items-center gap-2 text-[#737373]">
-              <span>Forged with fire &amp; sourdough</span>
+            <div className="flex items-center gap-4 text-[#737373]">
+              <a
+                href="https://github.com/PRANEETH-VENKAT/EMBER-CRUST"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#A3A3A3] hover:text-[#FFD60A] transition-colors flex items-center gap-1.5"
+                aria-label="GitHub Repository"
+                title="GitHub Repository"
+              >
+                <Github className="h-4 w-4" />
+                <span className="hidden sm:inline">GitHub</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/praneeth-venkat-352068437/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#A3A3A3] hover:text-[#FFD60A] transition-colors flex items-center gap-1.5"
+                aria-label="LinkedIn Profile"
+                title="LinkedIn Profile"
+              >
+                <Linkedin className="h-4 w-4" />
+                <span className="hidden sm:inline">LinkedIn</span>
+              </a>
+              <a
+                href="mailto:praneethvenkat.cn@gmail.com"
+                className="text-[#A3A3A3] hover:text-[#FFD60A] transition-colors flex items-center gap-1.5"
+                aria-label="Email"
+                title="Email praneethvenkat.cn@gmail.com"
+              >
+                <Mail className="h-4 w-4" />
+                <span className="hidden sm:inline">Email</span>
+              </a>
               <span>·</span>
               <button
                 type="button"

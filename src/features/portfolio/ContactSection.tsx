@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Github, ArrowLeft, Check, Copy, ExternalLink } from 'lucide-react';
+import { Mail, Github, Linkedin, ArrowLeft, Check, Copy, ExternalLink } from 'lucide-react';
 
 interface ContactSectionProps {
   onReturnToFoodApp: () => void;
@@ -14,7 +14,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   onReturnToFoodApp,
 }) => {
   const [copied, setCopied] = useState<boolean>(false);
-  const email = 'padavala.dev@gmail.com';
+  const email = 'praneethvenkat.cn@gmail.com';
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -82,13 +82,25 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
           {/* GitHub Link */}
           <a
-            href="https://github.com"
+            href="https://github.com/PRANEETH-VENKAT/EMBER-CRUST"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-2xl border border-[#2E2E2E] bg-[#0E0E0E] px-5 py-3.5 font-mono text-xs font-semibold text-white hover:border-[#FFD400] hover:text-[#FFD400] transition-colors"
           >
             <Github className="h-4 w-4" />
             <span>GitHub Profile</span>
+            <ExternalLink className="h-3 w-3 text-[#737373]" />
+          </a>
+
+          {/* LinkedIn Link */}
+          <a
+            href="https://www.linkedin.com/in/praneeth-venkat-352068437/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-2xl border border-[#2E2E2E] bg-[#0E0E0E] px-5 py-3.5 font-mono text-xs font-semibold text-white hover:border-[#0A66C2] hover:text-[#0A66C2] transition-colors"
+          >
+            <Linkedin className="h-4 w-4" />
+            <span>LinkedIn</span>
             <ExternalLink className="h-3 w-3 text-[#737373]" />
           </a>
         </div>
@@ -114,7 +126,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
         {/* Academic Colophon Stamp */}
         <div className="mt-16 font-mono text-[11px] text-[#525252] space-y-1">
-          <p>PADAVALA · FIRST-YEAR B.TECH AI/ML AT SRM</p>
+          <p>PRANEETH · FIRST-YEAR B.TECH AI/ML AT SRM RMP</p>
           <p className="text-[#3ef0b0]">WOOD-FIRED DINING INTERFACE SUBMISSION · ROUND 1</p>
         </div>
       </div>

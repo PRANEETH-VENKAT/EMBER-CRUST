@@ -13,7 +13,7 @@ const FRONTEND_TOOLS: ToolItem[] = [
   {
     name: 'React 19',
     category: 'Framework',
-    level: 'Core Driver',
+    level: 'Foundational',
     description: 'Component lifecycles, custom hooks, useReducer state machines, and memoized performance patterns.',
     iconSvg: (
       <svg className="h-6 w-6 text-[#2f5bff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -27,7 +27,7 @@ const FRONTEND_TOOLS: ToolItem[] = [
   {
     name: 'JavaScript / ESNext',
     category: 'Language',
-    level: 'Advanced',
+    level: 'Foundational ',
     description: 'Closures, event loops, WebAudio API, Canvas 2D, asynchronous orchestration, and zero-runtime modules.',
     iconSvg: (
       <svg className="h-6 w-6 text-[#FFD400]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -52,7 +52,7 @@ const FRONTEND_TOOLS: ToolItem[] = [
   {
     name: 'Modern CSS & Tokens',
     category: 'Styling',
-    level: 'Mastery',
+    level: 'Foundational',
     description: 'Fluid clamp() typography, CSS Grid architectures, CSS variables, dark themes, and zero-pill discipline.',
     iconSvg: (
       <svg className="h-6 w-6 text-[#3ef0b0]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -144,7 +144,7 @@ const AI_CREATIVE_TOOLS: ToolItem[] = [
   },
   {
     name: 'AI Video & Prompt Engines',
-    category: 'AI Tooling',
+    category: 'Mastered in AI ',
     level: '50+ Hrs Trained',
     description: 'Multi-modal prompt architectures, AI video synthesis pipelines, generative asset creation, and rapid prototyping.',
     iconSvg: (

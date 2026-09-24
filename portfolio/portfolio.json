@@ -1,0 +1,68 @@
+{
+  "title": "VIP Table · Premier View",
+  "subtitle": "Chef's Dossier & Technical Portfolio",
+  "stats": [
+    {
+      "value": 50,
+      "suffix": "+",
+      "label": "hrs of AI usage training"
+    },
+    {
+      "value": 3,
+      "suffix": "",
+      "label": "projects"
+    },
+    {
+      "value": 5,
+      "suffix": "",
+      "label": "core architectural projects"
+    }
+  ],
+  "sections": [
+    {
+      "id": "meet-the-chef",
+      "title": "Meet the Chef",
+      "content": "PADAVALA. First-year B.Tech AI/ML at SRM. I plan, prompt and organize projects so the code stays clean and easy for others to understand. Goal: dual degree (B.Tech + M.Tech) in AI/ML + Bioinformatics."
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "content": "First-year B.Tech in AI/ML at SRM."
+    },
+    {
+      "id": "ingredients",
+      "title": "Ingredients",
+      "content": "Languages: Python (basics), C (learning), JavaScript, HTML, CSS.\nFrameworks: React, Tailwind CSS.\nWorking skills: debugging (beginner-to-intermediate error finder), AI prompting, project planning, code organization."
+    },
+    {
+      "id": "ai-kitchen",
+      "title": "AI Kitchen",
+      "content": "50+ hours of classes on AI usage with Vaibhav Sisinty. Experience building several projects with AI assistance. My method: plan, prompt, review, refactor, document."
+    },
+    {
+      "id": "signature-dishes",
+      "title": "Signature Dishes",
+      "content": "NOVA (Chrome new-tab dashboard with a glassmorphism UI)\nSnake Game (browser game with a modular architecture)\nFocus Timer App (productivity timer with ambient visuals and multiple timer techniques)\nLinks: TODO: add GitHub/live link"
+    },
+    {
+      "id": "awards",
+      "title": "Awards",
+      "content": "Completed 50+ hours of AI usage training.\nTODO: add achievement"
+    },
+    {
+      "id": "the-recipe",
+      "title": "The Recipe",
+      "content": "How this app is built:\n\n```text\nsrc/\n├── components/       # Single-responsibility UI modules\n├── config/           # Access gates & app configuration\n├── context/          # State management via CartContext & reducer\n├── data/             # Single source of truth menu data\n├── features/vip/     # Lazy-loaded VIP Premier View\n├── hooks/            # Custom hooks (useCountUp, useInView, etc.)\n├── styles/           # CSS animations & design tokens\n└── utils/            # Shared constants, helpers & formatters\n```\n\nDesign decisions:\n1. Cart state machine: Context + useReducer with validated localStorage synchronization and integer rounding.\n2. Strict separation: Data structures are decoupled from UI presentation.\n3. Zero-runtime animation budget: Only composited transform and opacity properties; no third-party animation libraries.\n4. CodeKrafters design tokens: Dark canvas (#0A0A0A) paired with warm golden amber (#FFD60A).\n5. Lazy loading: VIP section is split into a separate bundle with React.lazy + Suspense.\n6. Accessibility: Keyboard traps, ARIA labels, and full prefers-reduced-motion support.\n\nAdd a new menu item in 3 steps:\n1. Open src/data/menu.ts\n2. Add a new entry to MENU_ITEMS with unique id, slug, price, and category\n3. Place the corresponding WebP image in public/images/menu/\n\nCallout: This structure is my reusable starter for future websites, apps and prototypes."
+    },
+    {
+      "id": "next-course",
+      "title": "Next Course",
+      "content": "Building core coding knowledge without relying on AI: deepening C and Python fundamentals and practicing debugging by hand."
+    },
+    {
+      "id": "reservations",
+      "title": "Reservations",
+      "content": "Email: TODO: add email\nGitHub: TODO: add GitHub profile\nLinkedIn: TODO: add LinkedIn profile"
+    }
+  ]
+}

@@ -389,7 +389,7 @@ export const VipGateModal: React.FC<VipGateModalProps> = ({
             ? 'Access authenticated. Loading premier portfolio canvas…'
             : isLockedOut
               ? 'Maximum attempts exceeded. Cryptographic cooldown in progress.'
-              : 'Enter the 6-digit clearance code to unlock the private portfolio.'}
+              : 'Enter the chefs 6-digit secret code to see exactly how he cooks.'}
         </p>
 
         {/* Digit Input Boxes */}
